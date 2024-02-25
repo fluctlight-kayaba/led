@@ -6,8 +6,8 @@ fi
 DEPOT_TOOLS_PATH="$(pwd)/tools/depot"
 export PATH="$DEPOT_TOOLS_PATH:$PATH"
 
-mkdir -p src/v8
-cd src/v8 || exit
+mkdir -p libs/v8
+cd libs/v8 || exit
 if [ ! -e "v8" ]; then
 	echo "V8 repo not found, cloning new..."
 	fetch v8
