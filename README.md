@@ -1,5 +1,7 @@
 ### nvim IDE
-- Run `cmake -S . -G "Unix Makefiles" -B cmake` to generate completion backend for clangd
+- Make sure (meson)[https://mesonbuild.com] installed
+- Run `meson setup build` to generate build c build configurations under `build` folder, you'll need this for clangd autocomletetion (done by reading `compile_commands.json`)
+- Run `meson compile -C build` to build c main program
 
 ### Other notes
 - See [opir.nims](https://github.com/PMunch/futhark/blob/master/src/opir.nims) and make sure your OS have the lib under its search dir. E.g 
